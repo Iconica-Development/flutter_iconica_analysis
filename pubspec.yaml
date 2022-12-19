@@ -1,0 +1,10 @@
+name: flutter_iconica_analysis
+version: 0.0.0
+description: Lint rules for Dart and Flutter used internally at Iconica Development BV.
+repository: https://github.com/Iconica-Development/flutter_iconica_analysis
+issue_tracker: https://github.com/Iconica-Development/flutter_iconica_analysis/issues
+homepage: https://github.com/Iconica-Development/flutter_iconica_analysis
+documentation: https://github.com/Iconica-Development/flutter_iconica_analysis
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"

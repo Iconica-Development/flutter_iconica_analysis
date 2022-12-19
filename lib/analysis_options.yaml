@@ -1,0 +1,6 @@
+analyzer:
+  exclude:
+
+linter:
+  rules:
+    prefer_single_quotes: true
