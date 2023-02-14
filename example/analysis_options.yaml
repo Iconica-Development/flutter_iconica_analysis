@@ -1,5 +1,7 @@
 include: package:flutter_iconica_analysis/analysis_options.yaml
 
+# https://dart-lang.github.io/linter/lints/index.html
+
 # Possible to overwrite the rules from the package
 
 analyzer:
