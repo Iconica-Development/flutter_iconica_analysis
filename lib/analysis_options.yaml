@@ -6,49 +6,59 @@ analyzer:
 linter:
   rules:
     # https://dart-lang.github.io/linter/lints/index.html
-    # rules with # default are already enabled by flutter_lints but specified here for completeness
-    
-    # default rules can't be changed because they are part of flutter_lints and we want to follow the Effective Dart rules
+    # rules with # flutter are already enabled by flutter_lints but specified here for completeness
+    # rules with # core are already enabled by dart lints but specified here for completeness
+
+    # core and flutter rules can't be changed because they are part of flutter_lints and we want to follow the Effective Dart rules
 
     # Error Rules
     always_use_package_imports: true
+    avoid_relative_lib_imports: true # core
     prefer_relative_imports: false
     avoid_dynamic_calls: true
-    avoid_empty_else: true
-    avoid_print: true # default
-    avoid_types_as_parameter_names: true
-    avoid_web_libraries_in_flutter: true # default
+    avoid_empty_else: true # core
+    avoid_print: true # flutter
+    avoid_type_to_string: true
+    avoid_types_as_parameter_names: true # core
+    avoid_web_libraries_in_flutter: true # flutter
     cancel_subscriptions: true
     close_sinks: true
-    empty_statements: true
+    collection_methods_unrelated_type: true
+    iterable_contains_unrelated_type: true # core
+    list_remove_unrelated_type: true # core
+    comment_references: false
+    control_flow_in_finally: true # flutter
+    empty_statements: true # flutter
+    hash_and_equals: true # core
     literal_only_boolean_expressions: true
     no_adjacent_strings_in_list: true
-    no_logic_in_create_state: true # default
-    prefer_void_to_null: true
+    no_duplicate_case_values: true # core
+    no_logic_in_create_state: true # flutter
+    prefer_void_to_null: true # flutter
     unnecessary_statements: true
-    use_build_context_synchronously: true # default
-    use_key_in_widget_constructors: true # default
-    valid_regexps: true
+    unrelated_type_equality_checks: true # core
+    use_build_context_synchronously: true # flutter
+    use_key_in_widget_constructors: true # flutter
+    valid_regexps: true # core
 
     # Style Rules
     always_declare_return_types: true
-    always_put_control_body_on_new_line: true
+    always_put_control_body_on_new_line: false
     always_put_required_named_parameters_first: true
     always_specify_types: false
-    annotate_overrides: true
+    annotate_overrides: true # core
     avoid_bool_literals_in_conditional_expressions: true
     avoid_final_parameters: true
     avoid_multiple_declarations_per_line: true
-    avoid_returning_null: true
-    avoid_returning_null_for_void: true
-    avoid_unnecessary_containers: true # default
+    avoid_returning_null_for_void: true # flutter
+    avoid_unnecessary_containers: true # flutter
     avoid_unused_constructor_parameters: true
     avoid_void_async: true
-    camel_case_extensions: true
+    camel_case_extensions: true # core
     curly_braces_in_flow_control_structures: false
     directives_ordering: true
-    empty_catches: true
-    empty_constructor_bodies: true
+    empty_catches: true # core
+    empty_constructor_bodies: true # flutter
     enable_null_safety: true
     eol_at_end_of_file: true
     file_names: true
@@ -60,12 +70,14 @@ linter:
     omit_local_variable_types: true
     prefer_adjacent_string_concatenation: true
     prefer_conditional_assignment: true
-    prefer_const_constructors: true # default
-    prefer_const_constructors_in_immutables: true # default
-    prefer_const_declarations: true # default
-    prefer_contains: true
+    prefer_const_constructors: true # flutter
+    prefer_const_constructors_in_immutables: true # flutter
+    prefer_const_literals_to_create_immutables: true # flutter
+    prefer_const_declarations: true # flutter
+    prefer_contains: true # flutter
     prefer_single_quotes: true
     prefer_double_quotes: false
+    avoid_escaping_inner_quotes: false
     prefer_equal_for_default_values: true
     prefer_if_null_operators: true
     prefer_interpolation_to_compose_strings: true
@@ -74,8 +86,10 @@ linter:
     prefer_iterable_whereType: true
     prefer_typing_uninitialized_variables: true
     require_trailing_commas: true
-    sized_box_for_whitespace: true # default
-    sort_child_properties_last: true # default
+    sized_box_for_whitespace: true # flutter
+    sort_child_properties_last: true # flutter
+    await_only_futures: true # core
+    discarded_futures: true
     unawaited_futures: true
     unnecessary_await_in_return: true
     unnecessary_brace_in_string_interps: true
@@ -87,10 +101,10 @@ linter:
     unnecessary_parenthesis: true
     unnecessary_raw_strings: true
     unnecessary_string_interpolations: true
-    use_full_hex_values_for_flutter_colors: true # default
+    use_full_hex_values_for_flutter_colors: true # flutter
     use_is_even_rather_than_modulo: true
     void_checks: true
 
     # Pub Rules
-    package_names: true
+    package_names: true # flutter
     secure_pubspec_urls: true
