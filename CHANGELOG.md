@@ -1,3 +1,7 @@
+# 2.0.0
+
+- Improved version of `analysis_options`
+
 # 1.0.0
 
 - First version of `analysis_options`
