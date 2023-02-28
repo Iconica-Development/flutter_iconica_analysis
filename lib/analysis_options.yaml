@@ -68,6 +68,8 @@ linter:
     lines_longer_than_80_chars: true
     missing_whitespace_between_adjacent_strings: true
     omit_local_variable_types: true
+    prefer_final_locals: false
+    prefer_final_fields: true
     prefer_adjacent_string_concatenation: true
     prefer_conditional_assignment: true
     prefer_const_constructors: true # flutter
@@ -79,15 +81,23 @@ linter:
     prefer_double_quotes: false
     avoid_escaping_inner_quotes: false
     prefer_equal_for_default_values: true
+    prefer_if_elements_to_conditional_expressions: true
     prefer_if_null_operators: true
     prefer_interpolation_to_compose_strings: true
     prefer_is_empty: true
     prefer_is_not_empty: true
+    prefer_is_not_operator: true
     prefer_iterable_whereType: true
+    prefer_null_aware_method_calls: true
+    prefer_null_aware_operators: true
+    prefer_spread_collections: true
     prefer_typing_uninitialized_variables: true
     require_trailing_commas: true
     sized_box_for_whitespace: true # flutter
+    slash_for_doc_comments: true
     sort_child_properties_last: true # flutter
+    sort_constructors_first: true
+    sort_unnamed_constructors_first: true
     await_only_futures: true # core
     discarded_futures: true
     unawaited_futures: true
@@ -97,12 +107,17 @@ linter:
     unnecessary_constructor_name: true
     unnecessary_final: true
     unnecessary_lambdas: true
+    unnecessary_late: true
     unnecessary_new: true
+    unnecessary_null_aware_assignments: true
+    unnecessary_null_in_if_null_operators: true
     unnecessary_parenthesis: true
     unnecessary_raw_strings: true
+    unnecessary_string_escapes: true
     unnecessary_string_interpolations: true
     use_full_hex_values_for_flutter_colors: true # flutter
     use_is_even_rather_than_modulo: true
+    use_super_parameters: true
     void_checks: true
 
     # Pub Rules

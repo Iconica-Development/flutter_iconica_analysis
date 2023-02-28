@@ -1,3 +1,7 @@
+# 3.0.0
+
+- Improved version with extra style rules
+
 # 2.0.0
 
 - Improved version of `analysis_options`
