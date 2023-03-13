@@ -39,8 +39,11 @@ linter:
     no_duplicate_case_values: true # core
     no_logic_in_create_state: true # flutter
     prefer_void_to_null: true # flutter
+    test_types_in_equals: false
+    throw_in_finally: true
     unnecessary_statements: true
     unrelated_type_equality_checks: true # core
+    unsafe_html: true
     use_build_context_synchronously: true # flutter
     use_key_in_widget_constructors: true # flutter
     valid_regexps: true # core
@@ -51,17 +54,34 @@ linter:
     always_put_required_named_parameters_first: true
     always_specify_types: false
     annotate_overrides: true # core
+    avoid_annotating_with_dynamic: true
     avoid_bool_literals_in_conditional_expressions: true
     avoid_catching_errors: true
     avoid_classes_with_only_static_members: true
+    avoid_field_initializers_in_const_classes: true
     avoid_final_parameters: true
+    avoid_function_literals_in_foreach_calls: true # flutter
+    avoid_init_to_null: true # flutter
     avoid_multiple_declarations_per_line: true
+    avoid_null_checks_in_equality_operators: true # flutter
+    avoid_positional_boolean_parameters: true
+    avoid_redundant_argument_values: true
+    avoid_renaming_method_parameters: true # flutter
+    avoid_return_types_on_setters: true # flutter
     avoid_returning_null_for_void: true # flutter
+    avoid_shadowing_type_parameters: true # flutter
+    avoid_single_cascade_in_expression_statements: true # flutter
+    avoid_types_on_closure_parameters: true
     avoid_unnecessary_containers: true # flutter
     avoid_unused_constructor_parameters: true
     avoid_void_async: true
     camel_case_extensions: true # core
-    curly_braces_in_flow_control_structures: false
+    camel_case_types: true # core
+    combinators_ordering: true
+    conditional_uri_does_not_exist: true
+    constant_identifier_names: true # flutter
+    curly_braces_in_flow_control_structures: false # flutter
+    deprecated_consistency: true
     directives_ordering: true
     empty_catches: true # core
     empty_constructor_bodies: true # flutter
