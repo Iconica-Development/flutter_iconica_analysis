@@ -1,3 +1,8 @@
+# 6.0.0
+
+- Improved version of `analysis_options`
+- Changed to Dart 3.0 with the new corresponding linter rules
+
 # 5.0.0
 
 - Improved version of `analysis_options`

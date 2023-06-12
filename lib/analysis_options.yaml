@@ -22,6 +22,7 @@ linter:
     avoid_dynamic_calls: true
     avoid_empty_else: true # core
     avoid_print: true # flutter
+    avoid_slow_async_io: true
     avoid_type_to_string: true
     avoid_types_as_parameter_names: true # core
     avoid_web_libraries_in_flutter: true # flutter
@@ -32,8 +33,10 @@ linter:
     list_remove_unrelated_type: true # core
     comment_references: false
     control_flow_in_finally: true # flutter
+    deprecated_member_use_from_same_package: true
     empty_statements: true # flutter
-    hash_and_equals: true # core
+    hash_and_equals: true # core   
+    invalid_case_patterns: true
     literal_only_boolean_expressions: true
     no_adjacent_strings_in_list: true
     no_duplicate_case_values: true # core
@@ -56,25 +59,34 @@ linter:
     annotate_overrides: true # flutter
     avoid_annotating_with_dynamic: true
     avoid_bool_literals_in_conditional_expressions: true
+    avoid_catches_without_on_clauses: true
     avoid_catching_errors: true
     avoid_classes_with_only_static_members: true
+    avoid_equals_and_hash_code_on_mutable_classes: true
     avoid_field_initializers_in_const_classes: true
     avoid_final_parameters: true
     avoid_function_literals_in_foreach_calls: true # flutter
+    avoid_implementing_value_types: true
     avoid_init_to_null: true # flutter
     avoid_multiple_declarations_per_line: true
     avoid_null_checks_in_equality_operators: true # flutter
     avoid_positional_boolean_parameters: true
+    avoid_private_typedef_functions: true
+    avoid_redundant_argument_values: false
     avoid_renaming_method_parameters: true # flutter
     avoid_return_types_on_setters: true # flutter
     avoid_returning_null_for_void: true # flutter
+    avoid_returning_this: true
     avoid_shadowing_type_parameters: true # core
     avoid_single_cascade_in_expression_statements: true # flutter
+    avoid_types_on_closure_parameters: false
     avoid_unnecessary_containers: true # flutter
     avoid_unused_constructor_parameters: true
     avoid_void_async: true
     camel_case_extensions: true # core
     camel_case_types: true # core
+    cascade_invocations: false
+    cast_nullable_to_non_nullable: true
     combinators_ordering: true
     conditional_uri_does_not_exist: true
     constant_identifier_names: true # flutter
@@ -96,15 +108,19 @@ linter:
     library_prefixes: true # flutter
     library_private_types_in_public_api: true # flutter
     lines_longer_than_80_chars: true
+    matching_super_parameters: true
     missing_whitespace_between_adjacent_strings: true
+    no_default_cases: false
     no_leading_underscores_for_library_prefixes: true # flutter
     no_leading_underscores_for_local_identifiers: true # flutter
+    no_literal_bool_comparisons: true
     no_runtimeType_toString: true
     non_constant_identifier_names: true # core
     noop_primitive_operations: true
     null_check_on_nullable_type_parameter: true # core
     null_closures: true # flutter
     omit_local_variable_types: true
+    one_member_abstracts: true
     only_throw_errors: true
     overridden_fields: true # flutter
     package_api_docs: true
@@ -112,7 +128,9 @@ linter:
     parameter_assignments: true
     prefer_final_locals: false
     prefer_final_fields: true # flutter
+    prefer_final_in_for_each: false
     prefer_adjacent_string_concatenation: true # flutter
+    prefer_asserts_in_initializer_lists: true
     prefer_asserts_with_message: true
     prefer_collection_literals: true # flutter
     prefer_conditional_assignment: true # flutter
@@ -124,6 +142,7 @@ linter:
     prefer_contains: true # flutter
     prefer_single_quotes: true
     prefer_double_quotes: false
+    prefer_expression_function_bodies: true
     avoid_escaping_inner_quotes: false
     prefer_for_elements_to_map_fromIterable: true # flutter
     prefer_function_declarations_over_variables: true # flutter
@@ -152,18 +171,23 @@ linter:
     sort_unnamed_constructors_first: true
     await_only_futures: true # core
     discarded_futures: true
+    tighten_type_of_initializing_formals: true
     type_init_formals: true # flutter
+    type_literal_in_constant_pattern: false
     unawaited_futures: true
     unnecessary_await_in_return: true
     unnecessary_brace_in_string_interps: true # flutter
+    unnecessary_breaks: true
     unnecessary_const: true # flutter
     unnecessary_constructor_name: true # flutter
     unnecessary_final: true
     unnecessary_getters_setters: true # flutter
     unnecessary_lambdas: true
     unnecessary_late: true # flutter
+    unnecessary_library_directive: true
     unnecessary_new: true # flutter
     unnecessary_null_aware_assignments: true # flutter
+    unnecessary_null_checks: true
     unnecessary_null_in_if_null_operators: true # flutter
     unnecessary_nullable_for_final_variable_declarations: true # flutter
     unnecessary_overrides: true # core
@@ -173,13 +197,17 @@ linter:
     unnecessary_string_interpolations: true # flutter
     unnecessary_this: true # flutter
     unnecessary_to_list_in_spreads: true
+    use_enums: true
     use_full_hex_values_for_flutter_colors: true # flutter
     use_function_type_syntax_for_parameters: true # flutter
     use_if_null_to_convert_nulls_to_bools: true
     use_is_even_rather_than_modulo: true
+    use_late_for_private_fields_and_variables: true
     use_named_constants: true
     use_raw_strings: true
     use_rethrow_when_possible: true # flutter
+    use_string_buffers: false
+    use_string_in_part_of_directives: true
     use_super_parameters: true
     void_checks: true # core
 
