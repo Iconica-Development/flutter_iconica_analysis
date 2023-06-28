@@ -29,8 +29,6 @@ linter:
     cancel_subscriptions: true
     close_sinks: true
     collection_methods_unrelated_type: true
-    iterable_contains_unrelated_type: true # core
-    list_remove_unrelated_type: true # core
     comment_references: false
     control_flow_in_finally: true # flutter
     deprecated_member_use_from_same_package: true
@@ -41,6 +39,8 @@ linter:
     no_adjacent_strings_in_list: true
     no_duplicate_case_values: true # core
     no_logic_in_create_state: true # flutter
+    no_self_assignments: true
+    no_wildcard_variable_uses: true
     prefer_void_to_null: true # flutter
     test_types_in_equals: false
     throw_in_finally: true
@@ -62,6 +62,7 @@ linter:
     avoid_catches_without_on_clauses: true
     avoid_catching_errors: true
     avoid_classes_with_only_static_members: true
+    avoid_double_and_int_checks: false
     avoid_equals_and_hash_code_on_mutable_classes: true
     avoid_field_initializers_in_const_classes: true
     avoid_final_parameters: true
@@ -77,6 +78,7 @@ linter:
     avoid_return_types_on_setters: true # flutter
     avoid_returning_null_for_void: true # flutter
     avoid_returning_this: true
+    avoid_setters_without_getters: false
     avoid_shadowing_type_parameters: true # core
     avoid_single_cascade_in_expression_statements: true # flutter
     avoid_types_on_closure_parameters: false
@@ -91,6 +93,7 @@ linter:
     conditional_uri_does_not_exist: true
     constant_identifier_names: true # flutter
     curly_braces_in_flow_control_structures: false # core
+    dangling_library_doc_comments: true # core
     deprecated_consistency: true
     directives_ordering: true
     do_not_use_environment: true
@@ -104,6 +107,7 @@ linter:
     implicit_call_tearoffs: true
     join_return_with_assignment: false
     leading_newlines_in_multiline_strings: true
+    library_annotations: true
     library_names: true # flutter
     library_prefixes: true # flutter
     library_private_types_in_public_api: true # flutter
@@ -128,6 +132,7 @@ linter:
     parameter_assignments: true
     prefer_final_locals: false
     prefer_final_fields: true # flutter
+    prefer_final_parameters: false
     prefer_final_in_for_each: false
     prefer_adjacent_string_concatenation: true # flutter
     prefer_asserts_in_initializer_lists: true
@@ -140,22 +145,25 @@ linter:
     prefer_const_literals_to_create_immutables: true # flutter
     prefer_const_declarations: true # flutter
     prefer_contains: true # flutter
-    prefer_single_quotes: true
-    prefer_double_quotes: false
+    prefer_single_quotes: false
+    prefer_double_quotes: true
     prefer_expression_function_bodies: true
-    avoid_escaping_inner_quotes: false
+    avoid_escaping_inner_quotes: true
     prefer_for_elements_to_map_fromIterable: true # flutter
+    prefer_foreach: false
     prefer_function_declarations_over_variables: true # flutter
     prefer_generic_function_type_aliases: true # core
     prefer_if_elements_to_conditional_expressions: true
     prefer_if_null_operators: true # flutter
     prefer_initializing_formals: true # flutter
     prefer_inlined_adds: true # flutter
+    prefer_int_literals: false
     prefer_interpolation_to_compose_strings: true # flutter
     prefer_is_empty: true # core
     prefer_is_not_empty: true # core
     prefer_is_not_operator: true # flutter
     prefer_iterable_whereType: true # core
+    prefer_mixin: true
     prefer_null_aware_method_calls: true
     prefer_null_aware_operators: true # flutter
     prefer_spread_collections: true # flutter
@@ -172,6 +180,7 @@ linter:
     await_only_futures: true # core
     discarded_futures: true
     tighten_type_of_initializing_formals: true
+    type_annotate_public_apis: true
     type_init_formals: true # flutter
     type_literal_in_constant_pattern: false
     unawaited_futures: true
@@ -187,6 +196,7 @@ linter:
     unnecessary_library_directive: true
     unnecessary_new: true # flutter
     unnecessary_null_aware_assignments: true # flutter
+    unnecessary_null_aware_operator_on_extension_on_nullable: true
     unnecessary_null_checks: true
     unnecessary_null_in_if_null_operators: true # flutter
     unnecessary_nullable_for_final_variable_declarations: true # flutter
@@ -197,6 +207,8 @@ linter:
     unnecessary_string_interpolations: true # flutter
     unnecessary_this: true # flutter
     unnecessary_to_list_in_spreads: true
+    use_colored_box: true
+    use_decorated_box: true
     use_enums: true
     use_full_hex_values_for_flutter_colors: true # flutter
     use_function_type_syntax_for_parameters: true # flutter
@@ -206,9 +218,10 @@ linter:
     use_named_constants: true
     use_raw_strings: true
     use_rethrow_when_possible: true # flutter
+    use_setters_to_change_properties: true
     use_string_buffers: false
     use_string_in_part_of_directives: true
-    use_super_parameters: true
+    use_super_parameters: true # flutter
     void_checks: true # core
 
     # Pub Rules
