@@ -65,7 +65,6 @@ linter:
     avoid_double_and_int_checks: false
     avoid_equals_and_hash_code_on_mutable_classes: true
     avoid_field_initializers_in_const_classes: true
-    avoid_final_parameters: true
     avoid_function_literals_in_foreach_calls: true # flutter
     avoid_implementing_value_types: true
     avoid_init_to_null: true # flutter
@@ -189,7 +188,6 @@ linter:
     unnecessary_breaks: true
     unnecessary_const: true # flutter
     unnecessary_constructor_name: true # flutter
-    unnecessary_final: true
     unnecessary_getters_setters: true # flutter
     unnecessary_lambdas: true
     unnecessary_late: true # flutter
