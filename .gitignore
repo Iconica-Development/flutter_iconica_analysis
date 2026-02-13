@@ -2,3 +2,6 @@ pubspec.lock
 .dart_tool
 .vscode
 .idea
+
+# FVM Version Cache
+.fvm/
