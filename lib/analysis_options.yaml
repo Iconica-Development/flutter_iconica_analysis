@@ -130,10 +130,10 @@ linter:
     package_api_docs: true
     package_prefixed_library_names: true # core
     parameter_assignments: true
-    prefer_final_locals: false
+    prefer_final_locals: true
     prefer_final_fields: true # flutter
-    prefer_final_parameters: false
-    prefer_final_in_for_each: false
+    prefer_final_parameters: true
+    prefer_final_in_for_each: true
     prefer_adjacent_string_concatenation: true # flutter
     prefer_asserts_in_initializer_lists: true
     prefer_asserts_with_message: true
