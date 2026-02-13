@@ -1,3 +1,7 @@
+# 8.0.0
+
+- Require finals where possible
+
 # 7.0.0
 
 - Improved version of `analysis_options`
