@@ -11,6 +11,5 @@ publish_to: https://forgejo.internal.iconica.nl/api/packages/internal/pub
 environment:
   sdk: ">=3.1.5 <4.0.0"
 
-# depend on the latest version of the linter package
 dependencies:
-  flutter_lints: ^3.0.1
+  flutter_lints: ^6.0.0
