@@ -33,7 +33,7 @@ linter:
     control_flow_in_finally: true # flutter
     deprecated_member_use_from_same_package: true
     empty_statements: true # flutter
-    hash_and_equals: true # core   
+    hash_and_equals: true # core
     invalid_case_patterns: true
     literal_only_boolean_expressions: true
     no_adjacent_strings_in_list: true
@@ -131,7 +131,6 @@ linter:
     parameter_assignments: true
     prefer_final_locals: true
     prefer_final_fields: true # flutter
-    prefer_final_parameters: true
     prefer_final_in_for_each: true
     prefer_adjacent_string_concatenation: true # flutter
     prefer_asserts_in_initializer_lists: true
