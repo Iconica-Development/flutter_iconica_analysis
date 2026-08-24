@@ -1,3 +1,7 @@
+# 9.0.0
+
+- Disable final parameters, as this is deprecated (and annoying)
+
 # 8.0.0
 
 - Require finals where possible
