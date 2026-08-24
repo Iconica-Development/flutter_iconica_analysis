@@ -1,3 +1,8 @@
+# 10.0.0
+
+- Set maxmimum line length to 120
+- Preserve trailing comma's
+
 # 9.0.0
 
 - Disable final parameters, as this is deprecated (and annoying)
